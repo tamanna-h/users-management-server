@@ -15,7 +15,7 @@ const users = [
     { id: 3, name: "Jane", email: "Xo7oI@example.com" }
 ];
 
-app.get("/users", (req, res) => {
+app.get('/users', (req, res) => {
     res.send(users);
 });
 
