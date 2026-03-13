@@ -19,7 +19,11 @@ app.get('/users', (req, res) => {
     res.send(users);
 });
 
+app.post('/users', (req, res) => {
+    console.log('users post method');
+})
+
 
 app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`);
+    console.log(`Users Server running on http://localhost:${port}`);
 });
